@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "clean": "rm -rf dist && mkdir dist",
-    "preBuild": "npm run clean && npm run test && npm install",
+    "preBuild": "npm install && npm run test && npm run clean",
     "build": "./node_modules/.bin/webpack --mode production",
     "devBuild": "./node_modules/.bin/webpack-dev-server --mode development"
   },
